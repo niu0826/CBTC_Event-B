@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+<org.eventb.core.psStatus name="inv4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv5/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv7/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/act8/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Point_Reserve/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Point_Reserve/grd7/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Point_Reserve/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Point_Reserve/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Point_Reserve/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Point_Reserve/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Point_Reserve/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Point_Set/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Point_Set/grd7/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Point_Set/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Point_Set/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Point_Set/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Trains_Update_Ma/grd4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Trains_Update_Ma/grd5/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Trains_Update_Ma/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Trains_Update_Ma/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Trains_Update_Ma/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Train_Move_Rear_Sec/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Train_Move_Rear_Sec/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Train_Move_Rear_Sec/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Train_Move_Rear_Point/grd8/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Train_Move_Rear_Point/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Train_Move_Rear_Point/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Train_Move_Rear_Point/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Train_Move_Rear_Point/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Train_Move_Rear_Point/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Train_Exit/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Train_Exit/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Train_Exit/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>

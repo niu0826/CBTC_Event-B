@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C0"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="POS"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name=")" org.eventb.core.identifier="Point"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="*" org.eventb.core.identifier="Default_Point_Pos"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="+" org.eventb.core.identifier="OBJ_Point_Pos"/>
+<org.eventb.core.axiom name="," org.eventb.core.label="axm1" org.eventb.core.predicate="Point ⊆ SEC"/>
+<org.eventb.core.axiom name="-" org.eventb.core.label="axm2" org.eventb.core.predicate="Default_Point_Pos ∈ Point→POS"/>
+<org.eventb.core.axiom name="." org.eventb.core.label="axm3" org.eventb.core.predicate="OBJ_Point_Pos ∈ OBJ→(Point→POS)"/>
+<org.eventb.core.axiom name="/" org.eventb.core.label="axm4" org.eventb.core.predicate="finite(POS)"/>
+<org.eventb.core.axiom name="0" org.eventb.core.label="axm5" org.eventb.core.predicate="∀ob,s·ob∈OBJ ∧ s∈objr(ob) ∧ s=fst(ob)⇒s∉Point"/>
+<org.eventb.core.axiom name="1" org.eventb.core.label="axm6" org.eventb.core.predicate="∀ob,s·ob∈OBJ ∧ s∈objr(ob) ∧ s=lst(ob)⇒s∉Point"/>
+<org.eventb.core.axiom name="2" org.eventb.core.label="axm7" org.eventb.core.predicate="∀ob,p·ob∈OBJ ∧ p∈dom(OBJ_Point_Pos(ob))⇒p∈objr(ob)"/>
+<org.eventb.core.carrierSet name="3" org.eventb.core.identifier="OBSTACLE"/>
+</org.eventb.core.contextFile>

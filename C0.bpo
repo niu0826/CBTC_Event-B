@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="SEC" org.eventb.core.type="ℙ(SEC)"/>
+<org.eventb.core.poIdentifier name="OBJ" org.eventb.core.type="ℙ(OBJ)"/>
+<org.eventb.core.poIdentifier name="Trains" org.eventb.core.type="ℙ(Trains)"/>
+<org.eventb.core.poIdentifier name="minSpeed" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+<org.eventb.core.poIdentifier name="SL" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="objr" org.eventb.core.type="ℙ(OBJ×ℙ(SEC))"/>
+<org.eventb.core.poIdentifier name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.poIdentifier name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.poIdentifier name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+<org.eventb.core.poIdentifier name="maxSpeed" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="axm6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP+"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂OBJ·a∈dom(objr)⇒objr∈OBJ ⇸ ℙ(SEC)" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#-"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#-"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP+"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm10/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP\/"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒ob∈dom(fst)∧fst∈OBJ ⇸ SEC∧ob∈dom(lst)∧lst∈OBJ ⇸ SEC" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#1"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP\/"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm11/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP0"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒ob∈dom(objrNext)∧objrNext∈OBJ ⇸ ℙ(SEC × SEC)∧ob∈dom(objr)∧objr∈OBJ ⇸ ℙ(SEC)∧ob∈dom(lst)∧lst∈OBJ ⇸ SEC∧ob∈dom(fst)∧fst∈OBJ ⇸ SEC" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#2"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm12/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP1"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀tr⦂OBJ·tr∈dom(objrNext)⇒objrNext∈OBJ ⇸ ℙ(SEC × SEC)" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#3"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm13/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP2"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒ob∈dom(fst)∧fst∈OBJ ⇸ SEC∧ob∈dom(objr)∧objr∈OBJ ⇸ ℙ(SEC)" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#4"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#4"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm14/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP3"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒ob∈dom(lst)∧lst∈OBJ ⇸ SEC∧ob∈dom(objr)∧objr∈OBJ ⇸ ℙ(SEC)" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#5"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#5"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm15/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP4"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒ob∈dom(objrNext)∧objrNext∈OBJ ⇸ ℙ(SEC × SEC)" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#6"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#6"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="HYP+" org.eventb.core.parentSet="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="finite(Trains)" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#F"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="finite(SEC)" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#G"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="net∈SEC ↔ SEC" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#D"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="net∩(SEC ◁ (id ⦂ ℙ(SEC×SEC)))=(∅ ⦂ ℙ(SEC×SEC))" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#E"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="objr∈OBJ → ℙ1(SEC)" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#,"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYP/" org.eventb.core.parentSet="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP+" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="∃a⦂OBJ·a∈dom(objr)∧finite(objr(a))⇒card(objr(a))&gt;1" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#-"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="objrNext∈OBJ → (SEC ⤔ SEC)" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#."/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="fst∈OBJ → SEC" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#\/"/>
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="lst∈OBJ → SEC" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#0"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYP0" org.eventb.core.parentSet="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP\/" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒fst(ob)≠lst(ob)" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#1"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYP1" org.eventb.core.parentSet="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP0" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒objrNext(ob)∈objr(ob) ∖ {lst(ob)} ⤖ objr(ob) ∖ {fst(ob)}" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#2"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYP2" org.eventb.core.parentSet="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP1" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="∀tr⦂OBJ,s⦂SEC,s1⦂SEC·tr∈dom(objrNext)∧s ↦ s1∈objrNext(tr)⇒s≠s1" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#3"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYP3" org.eventb.core.parentSet="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP2" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒fst(ob)∈objr(ob)" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#4"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYP4" org.eventb.core.parentSet="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP3" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD13" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒lst(ob)∈objr(ob)" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#5"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/CBTC_STPA_Modify_NEW/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP4" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD14" org.eventb.core.predicate="∀ob⦂OBJ,s1⦂SEC,s2⦂SEC·ob∈OBJ∧s1 ↦ s2∈objrNext(ob)⇒s1 ↦ s2∈net" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#6"/>
+<org.eventb.core.poPredicate name="PRD15" org.eventb.core.predicate="minSpeed∈ℕ1" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#;"/>
+<org.eventb.core.poPredicate name="PRD16" org.eventb.core.predicate="maxSpeed∈ℕ1" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#="/>
+<org.eventb.core.poPredicate name="PRD17" org.eventb.core.predicate="minSpeed&lt;maxSpeed" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#@"/>
+<org.eventb.core.poPredicate name="PRD18" org.eventb.core.predicate="SL=minSpeed ‥ maxSpeed" org.eventb.core.source="/CBTC_STPA_Modify_NEW/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#&gt;"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

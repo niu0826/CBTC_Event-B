@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="M0_VOBC"/>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="C1"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="occp"/>
+<org.eventb.core.variable name="*" org.eventb.core.identifier="trainOccpSECFront"/>
+<org.eventb.core.variable name="+" org.eventb.core.identifier="trainOccpSECRear"/>
+<org.eventb.core.variable name="," org.eventb.core.identifier="train_Speed"/>
+<org.eventb.core.variable name="-" org.eventb.core.identifier="braking"/>
+<org.eventb.core.variable name="." org.eventb.core.identifier="train_ma"/>
+<org.eventb.core.variable name="/" org.eventb.core.identifier="train_sl"/>
+<org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="*" org.eventb.core.assignment="objt:∈ Trains → OBJ" org.eventb.core.label="act8"/>
+<org.eventb.core.action name="'" org.eventb.core.assignment="Point_Res≔∅" org.eventb.core.label="act9"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="Point_Res_Train ≔∅" org.eventb.core.label="act10"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="Point_Pos≔Default_Point_Pos" org.eventb.core.label="act11"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="G" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Point_Reserve">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="tt"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="s"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="tt ∈ Trains"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="s ∈ objr(objt(tt))"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="s ∉ (Point_Res ∪ union(ran(occp)))"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd4" org.eventb.core.predicate="s ∈ Point∖Point_Res"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd5" org.eventb.core.predicate="s ∉ union(ran(train_ma))"/>
+<org.eventb.core.action name="." org.eventb.core.assignment="Point_Res≔Point_Res ∪ {s}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="/" org.eventb.core.assignment="Point_Res_Train(s)≔tt" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="0" org.eventb.core.label="grd6" org.eventb.core.predicate="s ∈ dom(Point_Pos)"/>
+<org.eventb.core.guard name="1" org.eventb.core.label="grd7" org.eventb.core.predicate="Point_Pos(s)=OBJ_Point_Pos(objt(tt))(s)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="M" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Point_Set">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="tt"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="s"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="s ∈ Point∖Point_Res"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="tt ∈ Trains"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="s ∈ objr(objt(tt))"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd4" org.eventb.core.predicate="s ∉ union(ran(occp))"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd5" org.eventb.core.predicate="s ∉ union(ran(train_ma))"/>
+<org.eventb.core.guard name="." org.eventb.core.label="grd6" org.eventb.core.predicate="s ∈ dom(Point_Pos)"/>
+<org.eventb.core.guard name="/" org.eventb.core.label="grd7" org.eventb.core.predicate="Point_Pos(s)≠OBJ_Point_Pos(objt(tt))(s)"/>
+<org.eventb.core.action name="0" org.eventb.core.assignment="Point_Pos(s)≔OBJ_Point_Pos(objt(tt))(s)" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Train_Enter">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Train_Enter"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Trains_Update_Ma">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Trains_Update_Ma"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd4" org.eventb.core.predicate="∀p·p∈ma ∧ p∈Point ⇒p∈Point_Res ∧ tt=Point_Res_Train(p)"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd5" org.eventb.core.predicate="∀p·p∈ma ∧ p∈Point ∧ p∈dom(Point_Pos) ⇒Point_Pos(p)=OBJ_Point_Pos(objt(tt))(p)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="I" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Trains_Update_Sl">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Trains_Update_Sl"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="3" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Trains_ChangeSpeed">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Trains_ChangeSpeed"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="4" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Train_Brake">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Train_Brake"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Train_StopBraking">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Train_StopBraking"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Train_Move_Front">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Train_Move_Front"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="7" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Train_Move_Rear_Sec">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Train_Move_Rear"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd7" org.eventb.core.predicate="s∉Point"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="H" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Train_Move_Rear_Point">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Train_Move_Rear"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd7" org.eventb.core.predicate="s ∈ Point_Res"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd8" org.eventb.core.predicate="Point_Res_Train(s)=tt"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Point_Res ≔ Point_Res ∖ {s}" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="Point_Res_Train≔Point_Res_Train ∖ {s↦tt}" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="8" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Train_Exit">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Train_Exit"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="E" org.eventb.core.identifier="objt"/>
+<org.eventb.core.variable name="9" org.eventb.core.identifier="Point_Res"/>
+<org.eventb.core.variable name=":" org.eventb.core.identifier="Point_Res_Train"/>
+<org.eventb.core.invariant name="F" org.eventb.core.label="inv1" org.eventb.core.predicate="objt ∈ Trains → OBJ"/>
+<org.eventb.core.invariant name=";" org.eventb.core.label="inv2" org.eventb.core.predicate="Point_Res ⊆ Point"/>
+<org.eventb.core.invariant name="=" org.eventb.core.label="inv3" org.eventb.core.predicate="Point_Res_Train ∈ Point_Res → Trains"/>
+<org.eventb.core.invariant name="&gt;" org.eventb.core.label="inv4" org.eventb.core.predicate="∀tt,p·tt∈dom(train_ma) ∧ p∈Point_Res ∧ tt=Point_Res_Train(p)⇒p∈objr(objt(tt)) "/>
+<org.eventb.core.invariant name="?" org.eventb.core.label="inv5" org.eventb.core.predicate="∀tt,p·tt∈dom(train_ma) ∧ p∈train_ma(tt) ∧ p∈Point⇒ p∈Point_Res ∧ tt=Point_Res_Train(p)"/>
+<org.eventb.core.variable name="J" org.eventb.core.identifier="Point_Pos"/>
+<org.eventb.core.invariant name="K" org.eventb.core.label="inv6" org.eventb.core.predicate="Point_Pos ∈ Point → POS"/>
+<org.eventb.core.invariant name="L" org.eventb.core.label="inv7" org.eventb.core.predicate="∀tt,p·tt∈dom(train_ma) ∧ p∈(train_ma(tt) ∩ Point_Res ∩ dom(Point_Pos))⇒Point_Pos(p)=OBJ_Point_Pos(objt(tt))(p)"/>
+</org.eventb.core.machineFile>

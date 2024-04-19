@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="occp≔ ∅" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="trainOccpSECFront≔∅" org.eventb.core.label="act2"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="trainOccpSECRear≔∅" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="braking≔∅" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="train_Speed≔∅" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="train_ma≔Trains × {∅}" org.eventb.core.label="act6"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="train_sl≔Trains × {0}" org.eventb.core.label="act7"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="C0"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="occp"/>
+<org.eventb.core.variable name="*" org.eventb.core.identifier="trainOccpSECFront"/>
+<org.eventb.core.variable name="+" org.eventb.core.identifier="trainOccpSECRear"/>
+<org.eventb.core.variable name="," org.eventb.core.identifier="train_Speed"/>
+<org.eventb.core.variable name="-" org.eventb.core.identifier="braking"/>
+<org.eventb.core.variable name="." org.eventb.core.identifier="train_ma"/>
+<org.eventb.core.variable name="/" org.eventb.core.identifier="train_sl"/>
+<org.eventb.core.invariant name="0" org.eventb.core.label="inv1" org.eventb.core.predicate="trainOccpSECFront ∈ Trains ⇸ SEC"/>
+<org.eventb.core.invariant name="1" org.eventb.core.label="inv2" org.eventb.core.predicate="trainOccpSECRear ∈ dom(trainOccpSECFront) → SEC"/>
+<org.eventb.core.invariant name="2" org.eventb.core.label="inv3" org.eventb.core.predicate="occp ∈  dom(trainOccpSECFront)→ℙ(SEC)"/>
+<org.eventb.core.invariant name="3" org.eventb.core.label="inv4" org.eventb.core.predicate="∀tt·(tt∈dom(trainOccpSECFront) ⇒ trainOccpSECFront(tt) ∈ occp(tt))"/>
+<org.eventb.core.invariant name="4" org.eventb.core.label="inv5" org.eventb.core.predicate="∀tt·(tt∈dom(trainOccpSECFront) ⇒ trainOccpSECRear(tt) ∈ occp(tt))"/>
+<org.eventb.core.invariant name="5" org.eventb.core.label="inv6" org.eventb.core.predicate="braking ⊆ dom(trainOccpSECFront)"/>
+<org.eventb.core.invariant name="6" org.eventb.core.label="inv7" org.eventb.core.predicate="train_Speed ∈ dom(trainOccpSECFront)→ℕ"/>
+<org.eventb.core.invariant name="7" org.eventb.core.label="inv8" org.eventb.core.predicate="train_ma ∈ Trains→ℙ(SEC)"/>
+<org.eventb.core.invariant name="8" org.eventb.core.label="inv9" org.eventb.core.predicate="train_sl ∈ Trains→ℕ "/>
+<org.eventb.core.invariant name="9" org.eventb.core.label="inv10" org.eventb.core.predicate="∀tt,v,s·tt∈dom(trainOccpSECFront) ∧ v=train_Speed(tt) ∧ s=trainOccpSECFront(tt)⇒v≤train_sl(tt)"/>
+<org.eventb.core.invariant name=":" org.eventb.core.label="inv11" org.eventb.core.predicate="∀tt1,tt2·tt1∈dom(occp) ∧ tt2∈dom(occp) ∧tt1≠tt2 ⇒occp(tt1) ∩ occp(tt2)=∅"/>
+<org.eventb.core.event name=";" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Train_Enter">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="tt"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="ma"/>
+<org.eventb.core.parameter name=")" org.eventb.core.identifier="s"/>
+<org.eventb.core.parameter name="*" org.eventb.core.identifier="v"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd1" org.eventb.core.predicate="tt ∈ Trains∖dom(occp)"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd2" org.eventb.core.predicate="ma=train_ma(tt)"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd3" org.eventb.core.predicate="s∈ma"/>
+<org.eventb.core.guard name="." org.eventb.core.label="grd4" org.eventb.core.predicate="v∈ℕ ∧ v≤train_sl(tt)"/>
+<org.eventb.core.guard name="0" org.eventb.core.label="grd6" org.eventb.core.predicate="s∉union(ran(occp))"/>
+<org.eventb.core.action name="1" org.eventb.core.assignment="trainOccpSECFront(tt)≔s" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="2" org.eventb.core.assignment="trainOccpSECRear(tt)≔s" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="3" org.eventb.core.assignment="occp≔occp ∪ {tt↦{s}}" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="4" org.eventb.core.assignment="train_Speed(tt)≔v" org.eventb.core.label="act4"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="=" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Trains_Update_Ma">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="tt ∈ Trains"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="tt"/>
+<org.eventb.core.parameter name=")" org.eventb.core.identifier="ma"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="ma ⊆ SEC"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="train_ma(tt)≔ma" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="F" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Trains_Update_Sl">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="tt"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="sl"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="tt∈dom(train_Speed)"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="sl∈ℕ"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="train_Speed(tt)≤sl"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="train_sl(tt)≔sl" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="?" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Trains_ChangeSpeed">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="tt"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="v"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="tt∈dom(train_Speed)"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="v∈ℕ"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="tt∈braking ⇒ v&lt;train_Speed(tt)"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd4" org.eventb.core.predicate="v≤train_sl(tt) ∧ s=trainOccpSECFront(tt)"/>
+<org.eventb.core.parameter name="-" org.eventb.core.identifier="s"/>
+<org.eventb.core.action name="/" org.eventb.core.assignment="train_Speed(tt)≔v" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="@" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Train_Brake">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="tt"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="s"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="tt ∈ Trains"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="tt ∈ dom(occp)∖braking"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="s=trainOccpSECFront(tt)"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd4" org.eventb.core.predicate="train_Speed(tt)&gt;train_sl(tt)"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="braking ≔ braking ∪ {tt}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="A" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Train_StopBraking">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="tt"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="tt ∈ braking"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="train_Speed(tt)≤train_sl(tt)"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="braking ≔ braking ∖ {tt}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="B" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Train_Move_Front">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="tt"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="s"/>
+<org.eventb.core.parameter name=")" org.eventb.core.identifier="s1"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="tt ∈ dom(trainOccpSECFront)"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="s = trainOccpSECFront(tt)"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="s1 ∈ train_ma(tt)"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd4" org.eventb.core.predicate="s1≠s"/>
+<org.eventb.core.guard name="." org.eventb.core.label="grd5" org.eventb.core.predicate="s↦s1∈net"/>
+<org.eventb.core.guard name="/" org.eventb.core.label="grd6" org.eventb.core.predicate="s1∉union(ran(occp))"/>
+<org.eventb.core.action name="0" org.eventb.core.assignment="trainOccpSECFront(tt)≔s1" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="1" org.eventb.core.assignment="occp(tt)≔occp(tt) ∪ {s1}" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="2" org.eventb.core.label="grd7" org.eventb.core.predicate="train_Speed(tt)≤train_sl(tt)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="C" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Train_Move_Rear">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="tt"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="s"/>
+<org.eventb.core.parameter name=")" org.eventb.core.identifier="s1"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="tt ∈ dom(trainOccpSECRear)"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="s = trainOccpSECRear(tt)"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="s ≠ trainOccpSECFront(tt) "/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd4" org.eventb.core.predicate="s1 ∈ occp(tt)"/>
+<org.eventb.core.guard name="." org.eventb.core.label="grd5" org.eventb.core.predicate="s↦s1∈net"/>
+<org.eventb.core.guard name="/" org.eventb.core.label="grd6" org.eventb.core.predicate="s∈train_ma(tt)"/>
+<org.eventb.core.action name="0" org.eventb.core.assignment="trainOccpSECRear(tt)≔s1" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="1" org.eventb.core.assignment="occp(tt)≔occp(tt) ∖ {s}" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="2" org.eventb.core.assignment="train_ma(tt)≔train_ma(tt) ∖ {s}" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="D" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Train_Exit">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="tt"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="s"/>
+<org.eventb.core.parameter name=")" org.eventb.core.identifier="ma"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="tt∈dom(trainOccpSECRear)∖braking"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="s = trainOccpSECRear(tt)"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="ma = train_ma(tt)"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd4" org.eventb.core.predicate="s ∈ ma"/>
+<org.eventb.core.action name="." org.eventb.core.assignment="trainOccpSECFront≔{tt} ⩤ trainOccpSECFront" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="/" org.eventb.core.assignment="trainOccpSECRear≔{tt} ⩤ trainOccpSECRear" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="0" org.eventb.core.assignment="occp≔{tt} ⩤ occp" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="2" org.eventb.core.assignment="train_Speed≔{tt}⩤train_Speed" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="3" org.eventb.core.assignment="train_ma(tt)≔∅" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="E" org.eventb.core.label="inv12" org.eventb.core.predicate="∀tt,v,s·tt∈dom(trainOccpSECFront) ∧ v=train_Speed(tt) ∧ s=trainOccpSECFront(tt) ∧ v&gt;train_sl(tt)⇒tt∈braking"/>
+</org.eventb.core.machineFile>

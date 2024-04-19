@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" version="3">
+<org.eventb.core.carrierSet name="A" org.eventb.core.identifier="SEC"/>
+<org.eventb.core.carrierSet name="B" org.eventb.core.identifier="Trains"/>
+<org.eventb.core.carrierSet name="'" org.eventb.core.identifier="OBJ"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="C" org.eventb.core.identifier="net"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="(" org.eventb.core.identifier="objr"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name=")" org.eventb.core.identifier="objrNext"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="*" org.eventb.core.identifier="fst"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="+" org.eventb.core.identifier="lst"/>
+<org.eventb.core.axiom name="F" org.eventb.core.label="axm1" org.eventb.core.predicate="finite(Trains)"/>
+<org.eventb.core.axiom name="G" org.eventb.core.label="axm2" org.eventb.core.predicate="finite(SEC)"/>
+<org.eventb.core.axiom name="D" org.eventb.core.label="axm3" org.eventb.core.predicate="net∈SEC↔SEC"/>
+<org.eventb.core.axiom name="E" org.eventb.core.label="axm4" org.eventb.core.predicate="net ∩ (SEC ◁ id)=∅"/>
+<org.eventb.core.axiom name="," org.eventb.core.label="axm5" org.eventb.core.predicate="objr ∈ OBJ → ℙ1(SEC)"/>
+<org.eventb.core.axiom name="-" org.eventb.core.label="axm6" org.eventb.core.predicate="∃a · a ∈ dom(objr) ∧ finite(objr(a))⇒ card(objr(a)) &gt; 1"/>
+<org.eventb.core.axiom name="." org.eventb.core.label="axm7" org.eventb.core.predicate="objrNext∈OBJ→(SEC⤔SEC)"/>
+<org.eventb.core.axiom name="/" org.eventb.core.label="axm8" org.eventb.core.predicate="fst ∈ OBJ → SEC"/>
+<org.eventb.core.axiom name="0" org.eventb.core.label="axm9" org.eventb.core.predicate="lst ∈ OBJ → SEC"/>
+<org.eventb.core.axiom name="1" org.eventb.core.label="axm10" org.eventb.core.predicate="∀ob·ob∈OBJ ⇒ fst(ob)≠lst(ob)"/>
+<org.eventb.core.axiom name="2" org.eventb.core.label="axm11" org.eventb.core.predicate="∀ob·ob∈OBJ ⇒objrNext(ob)∈objr(ob)∖{lst(ob)} ⤖ objr(ob)∖{fst(ob)}"/>
+<org.eventb.core.axiom name="3" org.eventb.core.label="axm12" org.eventb.core.predicate="∀tr,s,s1·tr∈dom(objrNext) ∧ s↦s1∈objrNext(tr) ⇒s≠s1"/>
+<org.eventb.core.axiom name="4" org.eventb.core.label="axm13" org.eventb.core.predicate="∀ob·ob∈OBJ⇒fst(ob)∈objr(ob)"/>
+<org.eventb.core.axiom name="5" org.eventb.core.label="axm14" org.eventb.core.predicate="∀ob·ob∈OBJ⇒lst(ob)∈objr(ob)"/>
+<org.eventb.core.axiom name="6" org.eventb.core.label="axm15" org.eventb.core.predicate="∀ob,s1,s2·ob∈OBJ ∧ s1↦s2∈objrNext(ob)⇒s1↦s2∈net"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="9" org.eventb.core.identifier="minSpeed"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name=":" org.eventb.core.identifier="maxSpeed"/>
+<org.eventb.core.axiom name=";" org.eventb.core.label="axm16" org.eventb.core.predicate="minSpeed∈ℕ1"/>
+<org.eventb.core.axiom name="=" org.eventb.core.label="axm17" org.eventb.core.predicate="maxSpeed∈ℕ1"/>
+<org.eventb.core.axiom name="@" org.eventb.core.label="axm18" org.eventb.core.predicate="minSpeed &lt; maxSpeed"/>
+<org.eventb.core.axiom name="&gt;" org.eventb.core.label="axm19" org.eventb.core.predicate="SL=minSpeed‥maxSpeed"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="?" org.eventb.core.identifier="SL"/>
+</org.eventb.core.contextFile>

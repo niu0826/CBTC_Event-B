@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="axm5/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="ob,s" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="OBJ,SEC">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p22">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p20"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p22" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p28">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p27"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p28" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p29">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees ob)" org.eventb.core.prGoal="p29" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p30">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p30" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p31">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p31" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p32">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p32" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p33">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p33" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p34">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees ob,s)" org.eventb.core.prGoal="p34" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p35">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="SEC"/>
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p35" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p37" org.eventb.core.prHyps="p36">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p37" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p38">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p38" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p31">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p31" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p32">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p32" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p39">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p39" org.eventb.core.prHyps="p2"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="objr" org.eventb.core.type="ℙ(OBJ×ℙ(SEC))"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·⊤⇒ob∈dom(objr)∧objr∈OBJ ⇸ ℙ(SEC)∧(s∈objr(ob)⇒ob∈dom(fst)∧fst∈OBJ ⇸ SEC)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒fst(ob)≠lst(ob)">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="(∀a⦂OBJ·a∈dom(objr))∧(∀a⦂OBJ·finite(objr(a)))⇒(∃a⦂OBJ·card(objr(a))&gt;1)"/>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="(∀ob⦂OBJ·ob∈dom(objr))∧objr∈OBJ ⇸ ℙ(SEC)∧(∀ob⦂OBJ,s⦂SEC·s∈objr(ob)⇒ob∈dom(fst)∧fst∈OBJ ⇸ SEC)"/>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="s∈objr(ob)">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="SEC"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒fst(ob)∈objr(ob)"/>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="ob∈dom(fst)">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="∀ob⦂OBJ·lst(ob)∈objr(ob)">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="Point⊆SEC">
+<org.eventb.core.prIdent name="Point" org.eventb.core.type="ℙ(SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀ob⦂OBJ·fst(ob)∈objr(ob)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="net∩(id ⦂ ℙ(SEC×SEC))=(∅ ⦂ ℙ(SEC×SEC))">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="fst∈OBJ ⇸ SEC"/>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="ob∈dom(fst)∧fst∈OBJ ⇸ SEC">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="ob∈OBJ">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀ob⦂OBJ·¬fst(ob)=lst(ob)">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="ob∈dom(objr)">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="s∈objr(ob)⇒ob∈dom(fst)∧fst∈OBJ ⇸ SEC">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="SEC"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒objrNext(ob)∈objr(ob) ∖ {lst(ob)} ⤖ objr(ob) ∖ {fst(ob)}">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="net∈SEC ↔ SEC">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀ob⦂OBJ·⊤⇒objrNext(ob)∈objr(ob) ∖ {lst(ob)} ⤖ objr(ob) ∖ {fst(ob)}">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀ob⦂OBJ,s1⦂SEC,s2⦂SEC·s1 ↦ s2∈objrNext(ob)⇒s1 ↦ s2∈net">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀ob⦂OBJ·⊤⇒fst(ob)∈objr(ob)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="fst∈OBJ → SEC"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="∀tr⦂OBJ,s⦂SEC,s1⦂SEC·tr∈dom(objrNext)∧s ↦ s1∈objrNext(tr)⇒¬s=s1">
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀ob⦂OBJ,s1⦂SEC,s2⦂SEC·ob∈OBJ∧s1 ↦ s2∈objrNext(ob)⇒s1 ↦ s2∈net">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·ob∈OBJ⇒ob∈dom(objr)∧objr∈OBJ ⇸ ℙ(SEC)∧(s∈objr(ob)⇒ob∈dom(fst)∧fst∈OBJ ⇸ SEC)"/>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·s∈objr(ob)⇒ob∈dom(fst)∧fst∈OBJ ⇸ SEC"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="objr∈OBJ → ℙ1(SEC)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∃a⦂OBJ·a∈dom(objr)∧finite(objr(a))⇒card(objr(a))&gt;1"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀tr⦂OBJ,s⦂SEC,s1⦂SEC·tr∈dom(objrNext)∧s ↦ s1∈objrNext(tr)⇒s≠s1">
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀ob⦂OBJ·⊤⇒lst(ob)∈objr(ob)">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀ob⦂OBJ,s1⦂SEC,s2⦂SEC·⊤∧s1 ↦ s2∈objrNext(ob)⇒s1 ↦ s2∈net">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀ob⦂OBJ·objrNext(ob)∈objr(ob) ∖ {lst(ob)} ⤖ objr(ob) ∖ {fst(ob)}">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒lst(ob)∈objr(ob)">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="∀ob⦂OBJ·ob∈dom(objr)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="net∩(SEC ◁ (id ⦂ ℙ(SEC×SEC)))=(∅ ⦂ ℙ(SEC×SEC))">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒¬fst(ob)=lst(ob)">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="∀ob⦂OBJ·⊤⇒¬fst(ob)=lst(ob)">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="objr∈OBJ ⇸ ℙ(SEC)"/>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="OBJ"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm6/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="ob,s" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="OBJ,SEC">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p25">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p25" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p32">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p27"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p29"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p30"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p31"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p32" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p33">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees ob)" org.eventb.core.prGoal="p33" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p34">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p34" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p35">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p35" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p36">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p36" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p37">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p37" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p38">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees ob,s)" org.eventb.core.prGoal="p38" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p39">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="SEC"/>
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p39" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p41" org.eventb.core.prHyps="p40">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p41" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p42">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p42" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p35">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p35" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p36">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p36" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p43">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p43" org.eventb.core.prHyps="p2"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="objr" org.eventb.core.type="ℙ(OBJ×ℙ(SEC))"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒fst(ob)≠lst(ob)">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="(∀a⦂OBJ·a∈dom(objr))∧(∀a⦂OBJ·finite(objr(a)))⇒(∃a⦂OBJ·card(objr(a))&gt;1)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·ob∈OBJ∧s∈objr(ob)∧s=fst(ob)⇒s∉Point">
+<org.eventb.core.prIdent name="Point" org.eventb.core.type="ℙ(SEC)"/>
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="s∈objr(ob)">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="SEC"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="ob∈dom(lst)">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒fst(ob)∈objr(ob)">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·s∈objr(ob)∧s=fst(ob)⇒¬s∈Point">
+<org.eventb.core.prIdent name="Point" org.eventb.core.type="ℙ(SEC)"/>
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·⊤∧s∈objr(ob)∧s=fst(ob)⇒¬s∈Point">
+<org.eventb.core.prIdent name="Point" org.eventb.core.type="ℙ(SEC)"/>
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀ob⦂OBJ·lst(ob)∈objr(ob)"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="Point⊆SEC">
+<org.eventb.core.prIdent name="Point" org.eventb.core.type="ℙ(SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·⊤⇒ob∈dom(objr)∧objr∈OBJ ⇸ ℙ(SEC)∧(s∈objr(ob)⇒ob∈dom(lst)∧lst∈OBJ ⇸ SEC)"/>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀ob⦂OBJ·fst(ob)∈objr(ob)">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="ob∈dom(lst)∧lst∈OBJ ⇸ SEC">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="net∩(id ⦂ ℙ(SEC×SEC))=(∅ ⦂ ℙ(SEC×SEC))">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·ob∈OBJ∧s∈objr(ob)∧s=fst(ob)⇒¬s∈Point">
+<org.eventb.core.prIdent name="Point" org.eventb.core.type="ℙ(SEC)"/>
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="ob∈OBJ">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀ob⦂OBJ·¬fst(ob)=lst(ob)">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="ob∈dom(objr)">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒objrNext(ob)∈objr(ob) ∖ {lst(ob)} ⤖ objr(ob) ∖ {fst(ob)}">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="net∈SEC ↔ SEC">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀ob⦂OBJ·⊤⇒objrNext(ob)∈objr(ob) ∖ {lst(ob)} ⤖ objr(ob) ∖ {fst(ob)}">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="∀ob⦂OBJ,s1⦂SEC,s2⦂SEC·s1 ↦ s2∈objrNext(ob)⇒s1 ↦ s2∈net">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="s∈objr(ob)⇒ob∈dom(lst)∧lst∈OBJ ⇸ SEC">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="SEC"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀ob⦂OBJ·⊤⇒fst(ob)∈objr(ob)">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·ob∈OBJ⇒ob∈dom(objr)∧objr∈OBJ ⇸ ℙ(SEC)∧(s∈objr(ob)⇒ob∈dom(lst)∧lst∈OBJ ⇸ SEC)"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="∀tr⦂OBJ,s⦂SEC,s1⦂SEC·tr∈dom(objrNext)∧s ↦ s1∈objrNext(tr)⇒¬s=s1">
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀ob⦂OBJ,s1⦂SEC,s2⦂SEC·ob∈OBJ∧s1 ↦ s2∈objrNext(ob)⇒s1 ↦ s2∈net">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="lst∈OBJ → SEC"/>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="(∀ob⦂OBJ·ob∈dom(objr))∧objr∈OBJ ⇸ ℙ(SEC)∧(∀ob⦂OBJ,s⦂SEC·s∈objr(ob)⇒ob∈dom(lst)∧lst∈OBJ ⇸ SEC)"/>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·s∈objr(ob)⇒ob∈dom(lst)∧lst∈OBJ ⇸ SEC"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="objr∈OBJ → ℙ1(SEC)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∃a⦂OBJ·a∈dom(objr)∧finite(objr(a))⇒card(objr(a))&gt;1"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀tr⦂OBJ,s⦂SEC,s1⦂SEC·tr∈dom(objrNext)∧s ↦ s1∈objrNext(tr)⇒s≠s1">
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀ob⦂OBJ·⊤⇒lst(ob)∈objr(ob)"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="∀ob⦂OBJ,s1⦂SEC,s2⦂SEC·⊤∧s1 ↦ s2∈objrNext(ob)⇒s1 ↦ s2∈net">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀ob⦂OBJ·objrNext(ob)∈objr(ob) ∖ {lst(ob)} ⤖ objr(ob) ∖ {fst(ob)}">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒lst(ob)∈objr(ob)"/>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="∀ob⦂OBJ·ob∈dom(objr)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="net∩(SEC ◁ (id ⦂ ℙ(SEC×SEC)))=(∅ ⦂ ℙ(SEC×SEC))">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒¬fst(ob)=lst(ob)">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="lst∈OBJ ⇸ SEC"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀ob⦂OBJ·⊤⇒¬fst(ob)=lst(ob)">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="objr∈OBJ ⇸ ℙ(SEC)"/>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="OBJ"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm7/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="p,ob" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="OBJ,POS,SEC">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p29">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p20"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p25"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p27"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p29" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p37">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p30"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p31"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p32"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p33"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p26" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p34"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p35"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p28" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p36"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p37" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p38">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees ob)" org.eventb.core.prGoal="p38" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p39">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p39" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p40">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p40" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p41">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p41" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p42">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p42" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p43">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees ob,p)" org.eventb.core.prGoal="p43" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p44">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+<org.eventb.core.prIdent name="p" org.eventb.core.type="SEC"/>
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p44" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p46" org.eventb.core.prHyps="p45">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p46" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p47">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p47" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p40">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p40" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p41">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p41" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p48">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p48" org.eventb.core.prHyps="p2"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="OBJ_Point_Pos" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×POS))"/>
+<org.eventb.core.prIdent name="Point" org.eventb.core.type="ℙ(SEC)"/>
+<org.eventb.core.prIdent name="objr" org.eventb.core.type="ℙ(OBJ×ℙ(SEC))"/>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·s∈objr(ob)∧s=lst(ob)⇒¬s∈Point">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="(∀a⦂OBJ·a∈dom(objr))∧(∀a⦂OBJ·finite(objr(a)))⇒(∃a⦂OBJ·card(objr(a))&gt;1)"/>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="(∀ob⦂OBJ·⊤⇒ob∈dom(OBJ_Point_Pos)∧OBJ_Point_Pos∈OBJ ⇸ ℙ(SEC × POS))∧(∀ob⦂OBJ,p⦂SEC·⊤∧p∈dom(OBJ_Point_Pos(ob))⇒ob∈dom(objr)∧objr∈OBJ ⇸ ℙ(SEC))"/>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="p∈dom(OBJ_Point_Pos(ob))">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+<org.eventb.core.prIdent name="p" org.eventb.core.type="SEC"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·⊤∧s∈objr(ob)∧s=lst(ob)⇒¬s∈Point">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·s∈objr(ob)∧s=fst(ob)⇒¬s∈Point">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="(∀ob⦂OBJ·ob∈dom(OBJ_Point_Pos))∧OBJ_Point_Pos∈OBJ ⇸ ℙ(SEC × POS)∧(∀ob⦂OBJ,p⦂SEC·p∈dom(OBJ_Point_Pos(ob))⇒ob∈dom(objr)∧objr∈OBJ ⇸ ℙ(SEC))"/>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·⊤∧s∈objr(ob)∧s=fst(ob)⇒¬s∈Point">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="∀ob⦂OBJ·lst(ob)∈objr(ob)">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="net∩(id ⦂ ℙ(SEC×SEC))=(∅ ⦂ ℙ(SEC×SEC))">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·ob∈OBJ∧s∈objr(ob)∧s=fst(ob)⇒¬s∈Point">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·ob∈OBJ∧s∈objr(ob)∧s=lst(ob)⇒¬s∈Point">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="∀ob⦂OBJ·¬fst(ob)=lst(ob)">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="p∈dom(OBJ_Point_Pos(ob))⇒ob∈dom(objr)∧objr∈OBJ ⇸ ℙ(SEC)">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+<org.eventb.core.prIdent name="p" org.eventb.core.type="SEC"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="∀ob⦂OBJ,s1⦂SEC,s2⦂SEC·s1 ↦ s2∈objrNext(ob)⇒s1 ↦ s2∈net">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀ob⦂OBJ·⊤⇒fst(ob)∈objr(ob)">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="∀tr⦂OBJ,s⦂SEC,s1⦂SEC·tr∈dom(objrNext)∧s ↦ s1∈objrNext(tr)⇒¬s=s1">
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="objr∈OBJ → ℙ1(SEC)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀tr⦂OBJ,s⦂SEC,s1⦂SEC·tr∈dom(objrNext)∧s ↦ s1∈objrNext(tr)⇒s≠s1">
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀ob⦂OBJ·⊤⇒lst(ob)∈objr(ob)">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀ob⦂OBJ,s1⦂SEC,s2⦂SEC·⊤∧s1 ↦ s2∈objrNext(ob)⇒s1 ↦ s2∈net">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒lst(ob)∈objr(ob)">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="net∩(SEC ◁ (id ⦂ ℙ(SEC×SEC)))=(∅ ⦂ ℙ(SEC×SEC))">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒¬fst(ob)=lst(ob)">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀ob⦂OBJ·⊤⇒¬fst(ob)=lst(ob)">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="ob∈dom(OBJ_Point_Pos)">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="ob∈dom(objr)∧objr∈OBJ ⇸ ℙ(SEC)">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒fst(ob)≠lst(ob)">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·ob∈OBJ∧s∈objr(ob)∧s=fst(ob)⇒s∉Point">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒fst(ob)∈objr(ob)">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="Point⊆SEC"/>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀ob⦂OBJ·fst(ob)∈objr(ob)">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="OBJ_Point_Pos∈OBJ → (Point → POS)"/>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="ob∈OBJ">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="ob∈dom(objr)">
+<org.eventb.core.prIdent name="ob" org.eventb.core.type="OBJ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀ob⦂OBJ·ob∈OBJ⇒objrNext(ob)∈objr(ob) ∖ {lst(ob)} ⤖ objr(ob) ∖ {fst(ob)}">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀ob⦂OBJ,s⦂SEC·ob∈OBJ∧s∈objr(ob)∧s=lst(ob)⇒s∉Point">
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="(∀ob⦂OBJ·ob∈OBJ⇒ob∈dom(OBJ_Point_Pos)∧OBJ_Point_Pos∈OBJ ⇸ ℙ(SEC × POS))∧(∀ob⦂OBJ,p⦂SEC·ob∈OBJ∧p∈dom(OBJ_Point_Pos(ob))⇒ob∈dom(objr)∧objr∈OBJ ⇸ ℙ(SEC))"/>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="∀ob⦂OBJ,p⦂SEC·p∈dom(OBJ_Point_Pos(ob))⇒ob∈dom(objr)∧objr∈OBJ ⇸ ℙ(SEC)"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="net∈SEC ↔ SEC">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀ob⦂OBJ·⊤⇒objrNext(ob)∈objr(ob) ∖ {lst(ob)} ⤖ objr(ob) ∖ {fst(ob)}">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="OBJ_Point_Pos∈OBJ ⇸ ℙ(SEC × POS)"/>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀ob⦂OBJ,s1⦂SEC,s2⦂SEC·ob∈OBJ∧s1 ↦ s2∈objrNext(ob)⇒s1 ↦ s2∈net">
+<org.eventb.core.prIdent name="net" org.eventb.core.type="ℙ(SEC×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="∃a⦂OBJ·a∈dom(objr)∧finite(objr(a))⇒card(objr(a))&gt;1"/>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀ob⦂OBJ·objrNext(ob)∈objr(ob) ∖ {lst(ob)} ⤖ objr(ob) ∖ {fst(ob)}">
+<org.eventb.core.prIdent name="fst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="lst" org.eventb.core.type="ℙ(OBJ×SEC)"/>
+<org.eventb.core.prIdent name="objrNext" org.eventb.core.type="ℙ(OBJ×ℙ(SEC×SEC))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="∀ob⦂OBJ·ob∈dom(OBJ_Point_Pos)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀ob⦂OBJ,p⦂SEC·(ob∈OBJ⇒ob∈dom(OBJ_Point_Pos)∧OBJ_Point_Pos∈OBJ ⇸ ℙ(SEC × POS))∧(ob∈OBJ∧p∈dom(OBJ_Point_Pos(ob))⇒ob∈dom(objr)∧objr∈OBJ ⇸ ℙ(SEC))"/>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="objr∈OBJ ⇸ ℙ(SEC)"/>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="OBJ"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>
